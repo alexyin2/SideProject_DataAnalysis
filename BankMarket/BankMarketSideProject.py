@@ -6,7 +6,7 @@ from sklearn.model_selection import cross_val_score
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
 # Load data
-df = pd.read_csv('/Users/alex/Desktop/bank/bank-full.csv', sep=';')
+df = pd.read_csv('bank-full.csv', sep=';')
 df.head()
 # Summary Statistics and plots
 df.describe(include='all')
