@@ -8,7 +8,7 @@ Notice that there are still some problems remain unsolved:
 1. The number of subject in each program are not the same, while some programs only have a few subjects, others may have 30 subjects.
 2. I think the courses seperated in the file are too detailed, and some courses may share the same objective.
 '''
-df = pd.read_csv('/Users/alex/Desktop/SideProject/RecommendationDegreeProgram/test1.csv', skiprows=1, header=None)
+df = pd.read_csv('RecommendationDegreeProgram/test1.csv', skiprows=1, header=None)
 test = df.T
 zeros = np.zeros((19, 19))
 jac_sim = pd.DataFrame(zeros)
@@ -29,7 +29,7 @@ print(jac_sim)
 # jac_sim.to_csv('jac_sim.csv', sep=',') Export to csv file
 print(jac_sim[jac_sim > 0.3])
 # After that, we've done some data process on the file and we read it in again
-df1 = pd.read_csv('/Users/alex/Desktop/SideProject/RecommendationDegreeProgram/jac_sim.csv', index_col=0)
+df1 = pd.read_csv('RecommendationDegreeProgram/jac_sim.csv', index_col=0)
 
 
 # 2. Walk trap: we use this method to measure the similarity of students. Notice that it's not the real walk trap algorithm but it shares the same opinion.
