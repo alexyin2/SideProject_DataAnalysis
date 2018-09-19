@@ -3,8 +3,8 @@ library(openxlsx)
 library(ggplot2)
 library(plotly)
 # Setting plotly API key
-Sys.setenv("plotly_username"="alexyin2")
-Sys.setenv("plotly_api_key"="0D27QM8KioVwKCgiNrGh")
+Sys.setenv("plotly_username"="")
+Sys.setenv("plotly_api_key"="")
 # The code of uploading the plot: api_create(test, filename = "test")
 
 # Professor has offered me a task:
